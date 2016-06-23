@@ -1,0 +1,23 @@
+<div class="panel panel-primary defult-index" ng-class="{zoomin:isZoomed,chk:isClose}">
+  <div class="panel-heading row no-margin">
+    <div class="pull-left col-md-6 no-pad-mar">{{title}}</div>
+    <div class="col-md-6 no-pad-mar">
+      <span class="fa fa-close pull-right pointer" ng-click="closeWindow()"></span>
+      <span class="fa fa-cog pull-right pointer" ng-click="setting()"></span>
+      <span class="fa fa-search-plus pull-right pointer" ng-click="toggleZoom()" ng-hide="isZoomed"></span>
+      <span class="fa fa-search-minus pull-right pointer" ng-click="toggleZoom()" ng-show="isZoomed"></span>
+    </div>
+  </div>
+  <div class="panel-body panel-height">
+    <div class="flip">
+      <div class="card" ng-class="{'flipped':isFlipped}">
+        <div class="face front">
+          <div>this is the front face. hello hello hello hello hello hello hello hello hello hello</div>
+        </div>
+        <div class="face back">
+          <div>this is the back face hello hello hello hello hello hello hello hello</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="appa">
+
+  <head>
+    <link data-require="angular.js@1.5.0" data-semver="1.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link data-require="angular.js@1.5.0" data-semver="1.5.0" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <script data-require="angular.js@1.5.0" data-semver="1.5.0" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+    <script data-require="angular.js@1.5.0" data-semver="1.5.0" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-animate.min.js"></script>
+    <script data-require="angular.js@1.5.0" data-semver="1.5.0" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.4/ui-bootstrap-tpls.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flip.css" />
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <div ng-controller="myCont">
+      <div class="row">
+        <div class = "col-md-3 col-sm-2">
+          <window-frame title="Arrivals"></window-frame>
+        </div>
+        <div class = "col-md-3 col-sm-2">
+          <window-frame title="Departures" zoom="isZoomed"></window-frame>
+        </div>
+        <div class = "col-md-3 col-sm-2">
+          <window-frame title="Movements"></window-frame>
+        </div>
+        <div class = "col-md-3 col-sm-2">
+          <window-frame title="Other KPI" zoom="isZoomed"></window-frame>
+        </div>
+      </div>
+      
+      
+    </div>
+  </body>
+
+</html>
